@@ -93,6 +93,15 @@
       </ul>
       <p>您选择的照片仅在设备本地处理，不会上传到任何服务器。</p>
 
+      <h2>我们采取的个人信息安全保护措施</h2>
+      <p>即使本应用仅做本地处理、不上传照片内容，我们仍从以下几个方面保障您的个人信息安全：</p>
+      <p><strong>一、访问控制与最小权限原则。</strong>本应用严格遵循最小权限原则，只申请完成功能必需的系统权限（如相册读取、媒体文件写入），不申请通讯录、精确位置、电话、短信等与核心功能无关的权限。每项权限的使用目的与触发场景对用户透明，并可随时在系统设置中撤回授权。</p>
+      <p><strong>二、数据加密与存储安全。</strong>用户创作的作品以 JSON 文件形式保存在应用私有沙箱目录，仅本应用可访问，其他应用无法读取；匿名会话标识符通过系统提供的 EncryptedSharedPreferences（基于 AES-256 加密）存储于设备本地；不将任何可识别用户身份的信息保存到公共存储区域。</p>
+      <p><strong>三、传输加密。</strong>本应用涉及的所有网络请求（自动更新版本检查、匿名使用数据上报）均强制使用 HTTPS + TLS 1.2 及以上协议加密传输，不进行任何明文 HTTP 传输。</p>
+      <p><strong>四、身份鉴别。</strong>本应用无需账号注册与登录，不存在任何需要身份鉴别的用户数据；相关权限操作均由系统层身份认证（如设备解锁）前置完成。</p>
+      <p><strong>五、恶意代码防范。</strong>应用代码托管于受管理的代码仓库，通过自动化 CI/CD 流水线发布；引入的第三方依赖均为业界公认的合规组件（如 AndroidX、Google Play Services、PostHog SDK 等），发布前进行静态代码分析与自动化测试，防止引入恶意代码。</p>
+      <p><strong>六、安全审计与应急响应。</strong>定期审查第三方 SDK 的数据收集行为，确认与本政策的承诺一致；若发生安全事件或数据泄露，我们将在 72 小时内通过本页面发布公告，并通过下方联系邮箱向受影响用户说明处置方案。</p>
+
       <h2>无账号、无登录</h2>
       <p>本应用不需要注册账号或登录，不收集姓名、邮箱或任何身份信息。</p>
 
@@ -157,6 +166,15 @@
         <li>Save exported images, videos, or Live Photos to your library</li>
       </ul>
       <p>Your photos are processed locally on your device and are never uploaded to any server.</p>
+
+      <h2>Security Measures We Take to Protect Your Information</h2>
+      <p>Even though the App only processes data locally and does not upload photo content, we safeguard your personal information through the following measures:</p>
+      <p><strong>1. Access Control &amp; Least Privilege.</strong> The App strictly follows the principle of least privilege, requesting only the system permissions required for core functionality (photo library read, media file write). We do not request contacts, precise location, phone, SMS, or other permissions unrelated to core features. The purpose and trigger of each permission are transparent to users, who may revoke access at any time via system settings.</p>
+      <p><strong>2. Data Encryption &amp; Storage Security.</strong> User creations are saved as JSON files in the app's private sandbox directory, accessible only to this app; anonymous session identifiers are stored locally via EncryptedSharedPreferences (AES-256); no identifiable user information is written to public storage.</p>
+      <p><strong>3. Encryption in Transit.</strong> All network requests (auto-update version checks, anonymous analytics) are forced over HTTPS + TLS 1.2 or above; no plaintext HTTP transmission is used.</p>
+      <p><strong>4. Identity Verification.</strong> The App requires no account registration or login, so there is no user identity data requiring authentication; permission operations rely on system-level identity verification (e.g., device unlock).</p>
+      <p><strong>5. Malicious Code Prevention.</strong> Application code is hosted in a managed repository and released via automated CI/CD pipelines; third-party dependencies are all industry-recognized components (AndroidX, Google Play Services, PostHog SDK, etc.) and undergo static analysis and automated testing before release.</p>
+      <p><strong>6. Security Audit &amp; Incident Response.</strong> We periodically review third-party SDKs' data collection behavior to confirm compliance with this policy; in the event of a security incident or data breach, we will publish a notice on this page within 72 hours and contact affected users via the support email below.</p>
 
       <h2>No Accounts or Login</h2>
       <p>The App does not require registration or login, and does not collect names, email addresses, or any identity information.</p>
